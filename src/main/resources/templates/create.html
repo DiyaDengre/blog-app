@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Post</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>📝 Create New Blog Post</h1>
+    </div>
+
+    <!-- FORM -->
+    <div class="form-card">
+        <form action="/save" method="post">
+
+            <label>Title</label>
+            <input type="text" name="title" placeholder="Enter title" required>
+
+            <label>Author</label>
+            <input type="text" name="author" placeholder="Enter author name" required>
+
+            <label>Content</label>
+            <textarea name="content" rows="6" placeholder="Write your post content here..." required></textarea>
+
+            <div class="form-actions">
+                <a href="/" class="cancel-btn">Cancel</a>
+                <button type="submit" class="publish-btn">Publish Post</button>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
